@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Elliot Ackland</title>
+	<link href="/images/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i"type="text/css">
+	<link rel="stylesheet" href="/bower_components/mdl-selectfield/dist/mdl-selectfield.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+</head>
+<body>
+
+
+<div class=" mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+  <!-- Title -->
+  <span class="mdl-layout-title">Elliot Ackland</span>
+  <!-- Add spacer, to align navigation to the right -->
+  <div class="mdl-layout-spacer"></div>
+  <!-- Navigation -->
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="index.html">About me</a>
+    <a class="mdl-navigation__link" href="work.html">Work</a>
+    <a class="mdl-navigation__link" href="contact.html">Contact</a>
+  </nav>
+</div>
+
+  </header>
+  <div class="mdl-layout__drawer ">
+    <div class="side-title-wrapper">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col logo">
+        <span class="mdl-layout-title">Elliot Ackland</span>
+    </div>
+  </div>
+</div>
+
+<div class="mdl-navigation">
+  <a href="index.html" class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect"> About me</a>
+
+  <div class="mdl-accordion">
+    <a class="mdl-navigation__link mdl-accordion__button mdl-button mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>
+      Work
+    </a>
+    <div class="mdl-accordion__content-wrapper">
+      <div class="mdl-accordion__content mdl-animation--default">
+        <a href="work.html" class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect">All</a>
+        <a href="print_packaging.html" class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect">Print & Packaging</a>
+        <a href="user-interface.html" class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect">User Interface</a>
+        <!--<a href="logos_branding.html" class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect">Logos & Branding</a>-->
+      </div>
+    </div>
+  </div>
+  <a href="contact.html" class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect">Contact</a>
+</div>
+
+  </div>
+  <main class="mdl-layout__content">
+		<!-- main content -->
+      <a name="top"></a>
+
+
+<div class="detail-page">
+  <div class="mdl-cell mdl-cell--12-col go-back">
+    <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent" onclick="goBack()">
+      <i class="material-icons">arrow_back</i>
+    </button>
+  </div>
+  <div class="mdl-cell mdl-cell--12-col project-description">
+    <h1>Grainbid</h1>
+    <p>
+      <a href="http://www.grainbid.es">www.grainbid.es</a>
+    </p>
+    <p>
+        Grainbid is a mobile app for buying and selling grain on bulk. 
+    </p>
+    <p>
+      My task was to provide the UX and UI design and develop UI componentes useing VUEjs and Vue-Material framework.
+    </p>
+    <p>
+      <span class="tag">UI/UX design</span> <span class="tag">VUEjs</span> <span class="tag">Google Material</span>
+    </p>
+  </div>
+  <div class="image-detail">
+    <img src="../images/grainbid/grainbid-01.png" alt="Grainbid" />
+  </div>
+  <div class="image-detail over-color">
+    <img src="../images/grainbid/grainbid-02.png" alt="Grainbid" />
+  </div>
+  <div class="image-detail">
+    <img src="../images/grainbid/grainbid-03.png" alt="Grainbid" />
+  </div>
+  <div class="image-detail over-color">
+    <img src="../images/grainbid/grainbid-menu.png" alt="Grainbid" />
+  </div>
+</div>
+
+
+      <div class="mdl-cell mdl-cell--12-col go-up">
+        <a class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent" href="#top">
+          <i class="material-icons">arrow_upward</i>
+        </a>
+      </div>
+  </main>
+</div>
+
+<!-- end of main content -->
+</body>
+
+<script src="/bower_components/mdl-selectfield/dist/mdl-selectfield.min.js"></script>
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+<script>
+  $(function(){
+    $('.mdl-accordion__content').each(function(){
+      var content = $(this);
+      content.css('margin-top', -content.height());
+    });
+    $(document.body).on('click', '.mdl-accordion__button', function(){
+      $(this).parent('.mdl-accordion').toggleClass('mdl-accordion--opened');
+    });
+  });
+</script>
+</html>
