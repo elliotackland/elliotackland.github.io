@@ -1,8 +1,6 @@
 # elliotackland
 
-
-
-> IMPORTANT CHANGES, September 23, 2016     
+    
 > Material Design Lite being introduced
 
 
